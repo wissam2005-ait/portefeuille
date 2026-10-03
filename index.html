@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wissam Ait El Hadi | Développeuse Full-Stack</title>
+<meta name="description" content="Portfolio de Wissam Ait El Hadi, étudiante en Master 1 Développement à INGETIS Paris : PHP/MySQL, Java Swing, compilation.">
+<meta property="og:title" content="Wissam Ait El Hadi | Développeuse Full-Stack">
+<meta property="og:description" content="Master 1 Développement à INGETIS Paris. Projets PHP/MySQL, Java, React, Docker. Disponible pour un stage.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#030712">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%234f46e5'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>W</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+<div id="progress"></div>
+
+<header class="nav">
+  <a class="logo" href="#home">W.A<span>.</span></a>
+  <button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  <nav class="links" aria-label="Navigation">
+    <a href="#home">Accueil</a><a href="#about">À propos</a><a href="#skills">Compétences</a>
+    <a href="#experience">Expérience</a><a href="#projects">Projets</a><a href="#education">Formation</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="btn small" href="#contact">Me contacter</a>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div>
+    <p class="badge"><i></i> Disponible pour stage</p>
+    <h1>Wissam <span class="grad">Ait El Hadi</span></h1>
+    <p class="typed"><span id="typed"></span><b>|</b></p>
+    <p class="lead">Étudiante passionnée par le développement Full-Stack, je conçois des applications web et desktop du back-end au front-end. En Master 1 à Paris, avec deux stages en entreprise chez Sonatrach et Candia.</p>
+    <div class="row">
+      <a class="btn" href="#contact">✉ Me contacter</a>
+      <a class="btn ghost" href="CV_Wissam_Ait_El_Hadi_Classic_Elegance.pdf" download>⬇ Télécharger CV</a>
+    </div>
+  </div>
+  <div class="orbit" aria-hidden="true">
+    <div class="core"><strong>W.A</strong><small>Full-Stack Dev</small></div>
+    <span class="chip c1">PHP</span><span class="chip c2">Java</span><span class="chip c3">MySQL</span>
+    <span class="chip c4">REACT</span><span class="chip c5">DOCKER</span>
+  </div>
+</section>
+
+
+<section class="section" id="about">
+  <p class="eyebrow">— À propos</p><h2>Qui suis-je ?</h2>
+  <div class="split">
+    <div class="text">
+      <p>Étudiante en <b>Master 1 Développement</b> à l'école INGETIS Paris et titulaire d'un <b>Bac+3 en Génie Logiciel</b>, je cherche un <em>stage</em> en développement web Full-Stack pour travailler sur des projets concrets.</p>
+      <p>Je maîtrise <em class="v">PHP/MySQL</em>, <em class="v">JavaScript</em> et <em class="v">Java</em> : conception, développement et mise en place d'interfaces dynamiques. Mes stages chez Sonatrach et Candia m'ont appris à travailler en conditions réelles, en équipe.</p>
+      <p class="meta">📍 Taverny (95), France</p>
+    </div>
+    <div class="stats">
+      <div class="card"><strong data-n>5</strong><span>projets réalisés</span></div>
+      <div class="card"><strong data-n>2</strong><span>stages en entreprise</span></div>
+      <div class="card"><strong data-n>8</strong><span>langages maîtrisés</span></div>
+      <div class="card"><strong data-n>3</strong><span>langues parlées</span></div>
+    </div>
+  </div>
+  <div class="card interests">
+    <h3>Centres d'intérêt</h3>
+    <p class="tags"><span>Projets open source web et mobile</span><span>Intelligence artificielle</span><span>Développement web</span><span>Veille technologique</span><span>Innovation informatique</span></p>
+  </div>
+  <div class="card interests">
+    <h3>Savoir-être</h3>
+    <p class="tags"><span>Rigueur</span><span>Autonomie</span><span>Travail d'équipe</span><span>Gestion efficace du temps</span></p>
+  </div>
+</section>
+
+<section class="section" id="strengths">
+  <p class="eyebrow">— Points forts</p><h2>Ce que j'apporte</h2>
+  <div class="grid4 why">
+    <div class="card"><span class="ic">🌐</span><h3>Full-Stack Web</h3><p>Du front-end au back-end : interfaces dynamiques en JavaScript, logique en PHP, données en MySQL.</p></div>
+    <div class="card"><span class="ic">🖥️</span><h3>Applications desktop</h3><p>Interfaces ergonomiques en Java Swing, conception orientée objet, algorithmique et compilation.</p></div>
+    <div class="card"><span class="ic">🗄️</span><h3>Bases de données</h3><p>Modélisation relationnelle et requêtes SQL sur MySQL et Oracle.</p></div>
+    <div class="card"><span class="ic">🔒</span><h3>Rigueur &amp; sécurité</h3><p>Mots de passe hachés, requêtes préparées, protection CSRF : la sécurité dès la conception.</p></div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <p class="eyebrow">— Compétences</p><h2>Stack technique</h2>
+  <div class="grid4">
+    <div class="card k1"><h3>Langages</h3><p class="tags"><span>Java</span><span>JavaScript</span><span>PHP</span><span>Python</span><span>C</span><span>SQL</span><span>HTML5</span><span>CSS3</span></p></div>
+    <div class="card k2"><h3>Bases de données</h3><p class="tags"><span>MySQL</span><span>Oracle</span><span>Modélisation relationnelle</span></p></div>
+    <div class="card k3"><h3>Outils &amp; IDE</h3><p class="tags"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Eclipse</span><span>IntelliJ</span><span>Linux</span><span>Windows</span></p></div>
+    <div class="card k4"><h3>Méthodes</h3><p class="tags"><span>Conception orientée objet</span><span>Algorithmique</span><span>Compilation</span><span>Génie logiciel</span></p></div>
+    <div class="card k5"><h3>Frameworks &amp; DevOps</h3><p class="tags"><span>React.js</span><span>Docker</span><span>Pipeline CI/CD</span><span>n8n</span></p></div>
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <p class="eyebrow">— Expérience</p><h2>Parcours professionnel</h2>
+  <article class="card exp">
+    <span class="pill">Stage</span>
+    <h3>Développeuse Web Stagiaire</h3>
+    <p class="meta">Sonatrach RTC · Béjaïa, Algérie · Décembre 2025 – Janvier 2026</p>
+    <p>Conception et développement d'une application web de gestion bancaire interne : automatisation des mouvements, génération de brouillards de banque et validation par un responsable.</p>
+    <ul><li>Interfaces utilisateurs dynamiques avec trois rôles (agent, responsable, administrateur)</li><li>Sécurisation des flux de données (mots de passe hachés, requêtes préparées, protection CSRF)</li></ul>
+    <p class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Git</span></p>
+  </article>
+  <article class="card exp">
+    <span class="pill">Stage</span>
+    <h3>Stagiaire en conception logicielle</h3>
+    <p class="meta">Candia · Entreprise agroalimentaire</p>
+    <p>Stage consacré à la phase de conception d'une solution logicielle au sein d'une entreprise industrielle de référence : de l'expression du besoin jusqu'à la définition de la solution.</p>
+    <ul><li>Analyse des besoins des utilisateurs et rédaction des spécifications</li><li>Modélisation de la solution : fonctionnalités, structure des données, parcours utilisateur</li><li>Travail en équipe et échanges avec des interlocuteurs non techniques</li></ul>
+    <p class="tags"><span>Analyse des besoins</span><span>Conception</span><span>Modélisation</span></p>
+  </article>
+</section>
+
+<section class="section" id="projects">
+  <p class="eyebrow">— Projets</p><h2>Réalisations</h2>
+  <div class="filters" role="group" aria-label="Filtrer les projets"><button class="f on" data-f="all">Tous</button><button class="f" data-f="web">Web</button><button class="f" data-f="desktop">Desktop</button><button class="f" data-f="stage">Stage</button></div>
+  <div class="grid3">
+    <article class="card proj" data-cat="web stage">
+      <span class="pill star">★ Stage Sonatrach</span>
+      <h3>Gestion des mouvements bancaires</h3>
+      <p>Application web interne qui automatise le suivi des recettes et dépenses de la Direction Finance.</p>
+      <ul><li>Trois rôles : agent, responsable, administrateur</li><li>Génération de brouillards de banque, approuvés ou rejetés par le responsable</li><li>Sécurité : mots de passe hachés, requêtes préparées, protection CSRF</li></ul>
+      <p class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></p>
+      <a class="more" href="https://github.com/wissam2005-ait/sonatrach-banque" target="_blank" rel="noopener">Voir le code ↗</a>
+    </article>
+    <article class="card proj" data-cat="web">
+      <span class="pill">Projet universitaire · Web</span>
+      <h3>Suivi médical en ligne</h3>
+      <p>Plateforme qui centralise la gestion d'un cabinet médical.</p>
+      <ul><li>Prise de rendez-vous en ligne</li><li>Dossiers patients</li><li>Suivi des soins</li></ul>
+      <p class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span></p>
+      <a class="more" href="https://github.com/wissam2005-ait/diablife" target="_blank" rel="noopener">Voir le code ↗</a>
+    </article>
+    <article class="card proj" data-cat="web">
+      <span class="pill">Projet universitaire · Web</span>
+      <h3>Réservation d'hôtel</h3>
+      <p>Application de réservation de chambres, de la recherche à la confirmation.</p>
+      <ul><li>Recherche multi-critères de chambres</li><li>Gestion des disponibilités</li><li>Confirmation de réservation en ligne</li></ul>
+      <p class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span></p>
+      <a class="more" href="https://github.com/wissam2005-ait/hotel_etoile" target="_blank" rel="noopener">Voir le code ↗</a>
+    </article>
+    <article class="card proj" data-cat="desktop">
+      <span class="pill">Projet universitaire · Desktop</span>
+      <h3>Gestion et planification des trains</h3>
+      <p>Application desktop pour organiser un réseau ferroviaire.</p>
+      <ul><li>Planification des horaires et des trajets</li><li>Réservation de billets</li><li>Interface graphique Java Swing</li></ul>
+      <p class="tags"><span>Java</span><span>Java Swing</span></p>
+      <a class="more" href="https://github.com/wissam2005-ait/GestionFerroviaire" target="_blank" rel="noopener">Voir le code ↗</a>
+    </article>
+    <article class="card proj" data-cat="desktop">
+      <span class="pill">Projet universitaire · Desktop</span>
+      <h3>Mini compilateur JavaScript</h3>
+      <p>Compilateur d'un sous-ensemble de JavaScript, écrit en Java.</p>
+      <ul><li>Analyse lexicale et syntaxique</li><li>Interprétation du code</li><li>Affichage des erreurs dans une interface Swing</li></ul>
+      <p class="tags"><span>Java</span><span>Java Swing</span></p>
+      <a class="more" href="https://github.com/wissam2005-ait/mini_compilateur_java_script" target="_blank" rel="noopener">Voir le code ↗</a>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="education">
+  <p class="eyebrow">— Formation</p><h2>Parcours académique</h2>
+  <ol class="timeline">
+    <li class="now"><span class="pill">En cours</span><h3>Master 1 Développement</h3><p class="meta">École INGETIS Paris · 2026 – en cours</p></li>
+    <li><h3>Bac+3 Génie Logiciel</h3><p class="meta">Université Abderrahmane Mira, Béjaïa · 2023 – 2026</p></li>
+    <li><h3>Formation Java Développeur</h3><p class="meta">Jura School, Béjaïa · 2024</p></li>
+    <li><h3>Baccalauréat Technique Mathématique, mention Très Bien</h3><p class="meta">Lycée Arzki Laurani, Béjaïa · 2023</p></li>
+  </ol>
+ 
+</section>
+
+<section class="section" id="contact">
+  <p class="eyebrow">— Contact</p><h2>Travaillons ensemble</h2>
+  <div class="split">
+    <div class="text">
+      <p>Un stage, une alternance, un projet ? Écrivez-moi : je réponds rapidement.</p>
+      <p class="meta">✉ wissam.aitelhadii@gmail.com</p>
+            <p class="meta">📞 0746399300</p>
+
+      <p class="meta">📍 Taverny (95), France</p>
+      <p class="row"><a class="btn ghost" href="https://github.com/wissam2005-ait" target="_blank" rel="noopener">GitHub</a><a class="btn ghost" href="CV_Wissam_Ait_El_Hadi_Classic_Elegance.pdf" download>CV (PDF)</a></p>
+    </div>
+    <form class="card" id="form">
+      <div class="two"><label>Nom<input name="nom" required></label><label>Email<input type="email" name="email" required></label></div>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <button class="btn" type="submit">Envoyer le message</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><span>© 2026 Wissam Ait El Hadi</span></footer>
+
+<button id="top" aria-label="Retour en haut" hidden>↑</button>
+<script src="script.js"></script>
+</body>
+</html>
