@@ -143,3 +143,4 @@ input,textarea{width:100%;padding:14px 16px;border-radius:12px;border:1px solid 
 .lead b{color:var(--text)}
 .lnk{color:#93c5fd}.lnk:hover{text-decoration:underline}
 @media (max-width:900px){.proj.featured{grid-template-columns:1fr}.shots{padding-bottom:18%}.shots img+img{right:0}}
+.links2{display:flex;gap:18px;flex-wrap:wrap}.links2 a{color:#a78bfa}.links2 a:hover{text-decoration:underline}
