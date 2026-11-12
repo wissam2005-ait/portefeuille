@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   sizeCanvas(); draw(); addEventListener('resize', sizeCanvas);
 
   /* Effet de frappe */
-  const words = ['Développeuse Web Full-Stack', 'Étudiante en Master 1', 'Passionnée de PHP, Java et SQL'];
+  const words = ['Développeuse Full-Stack', 'Recherche de stage · 4 à 6 mois', 'React · Node.js · PHP · Java'];
   const out = document.getElementById('typed');
   let w = 0, i = 0, del = false;
   (function type() {
