@@ -172,3 +172,127 @@ input,textarea{width:100%;padding:14px 16px;border-radius:12px;border:1px solid 
 .links2 a{display:inline-flex;align-items:center;gap:6px}
 .chip{display:inline-flex;align-items:center;gap:8px}
 .chip::before{content:'';width:8px;height:8px;border-radius:50%;background:currentColor;box-shadow:0 0 10px currentColor}
+/* Centres d'intérêt et savoir-être : cartes premium, sans badges */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}
+.card.lux{padding:34px 34px 30px;border:1px solid transparent;border-radius:24px;
+  background:linear-gradient(160deg,rgba(17,24,39,.92),rgba(3,7,18,.96)) padding-box,
+             linear-gradient(135deg,rgba(124,58,237,.55),rgba(59,130,246,.15) 45%,rgba(255,255,255,.06)) border-box;
+  box-shadow:0 30px 60px -30px rgba(79,70,229,.45),inset 0 1px 0 rgba(255,255,255,.04);overflow:hidden}
+.card.lux::before{content:'';position:absolute;top:-80px;right:-80px;width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle,rgba(124,58,237,.22),transparent 70%);pointer-events:none}
+.card.lux:hover{border-color:transparent}
+.lux-head{display:flex;align-items:center;gap:16px;padding-bottom:20px;margin-bottom:8px;border-bottom:1px solid var(--line)}
+.lux-head .i{width:48px;height:48px;padding:12px;border-radius:14px;color:#fff;background:var(--grad);box-shadow:0 10px 24px rgba(79,70,229,.45)}
+.lux-head h3{font-size:1.35rem;letter-spacing:-.01em}
+.lux-head p{color:var(--soft);font-size:.9rem;margin-top:2px}
+.lux-list{list-style:none;display:grid}
+.lux-list li{display:flex;align-items:center;gap:14px;padding:13px 2px;color:#e2e8f0;font-size:1.02rem;border-bottom:1px solid rgba(255,255,255,.05);transition:padding .25s,color .25s}
+.lux-list li:last-child{border-bottom:0}
+.lux-list li::before{content:'';flex:none;width:18px;height:2px;border-radius:2px;background:var(--grad);transition:width .25s}
+.lux-list li:hover{padding-left:8px;color:#fff}
+.lux-list li:hover::before{width:28px}
+@media (max-width:900px){.duo{grid-template-columns:1fr}}
+
+/* =====================================================================
+   DESIGN PREMIUM — appliqué à tout le site
+   ===================================================================== */
+:root{--bg:#04060f;--soft:#9aa6bd;--line:rgba(255,255,255,.07);
+  --edge:linear-gradient(135deg,rgba(124,58,237,.5),rgba(59,130,246,.14) 45%,rgba(255,255,255,.05));
+  --edge-hi:linear-gradient(135deg,rgba(167,139,250,.85),rgba(59,130,246,.35) 50%,rgba(255,255,255,.08));
+  --glass:linear-gradient(160deg,rgba(17,24,39,.9),rgba(4,6,15,.95))}
+body{background:
+  radial-gradient(900px 600px at 85% -10%,rgba(124,58,237,.18),transparent 60%),
+  radial-gradient(800px 500px at -10% 30%,rgba(59,130,246,.12),transparent 60%),
+  var(--bg);background-attachment:fixed;letter-spacing:.005em}
+::selection{background:rgba(124,58,237,.45);color:#fff}
+
+/* Navigation flottante */
+.nav{inset:14px 50% auto auto;transform:translateX(50%);width:min(1180px,94%);border-radius:18px;padding:10px 12px 10px 22px;
+  background:rgba(8,11,24,.62);border:1px solid rgba(255,255,255,.08);box-shadow:0 20px 50px -20px rgba(0,0,0,.7)}
+.links a{font-size:.94rem;padding:8px 14px}
+.links a.on{background:rgba(124,58,237,.14);border-color:rgba(124,58,237,.35)}
+.btn.small{background:#fff;color:#0b1020;border:0}
+.btn.small:hover{box-shadow:0 10px 30px rgba(255,255,255,.18)}
+
+/* Boutons */
+.btn{border-radius:14px;padding:14px 26px;box-shadow:0 14px 34px -10px rgba(99,102,241,.65),inset 0 1px 0 rgba(255,255,255,.25)}
+.btn.ghost{border:1px solid transparent;background:linear-gradient(rgba(10,14,28,.9),rgba(10,14,28,.9)) padding-box,var(--edge) border-box}
+.btn.ghost:hover{background:linear-gradient(rgba(16,20,38,.95),rgba(16,20,38,.95)) padding-box,var(--edge-hi) border-box}
+
+/* Hero */
+.badge{background:rgba(34,197,94,.06);border-color:rgba(34,197,94,.25);color:#86efac;font-size:.92rem}
+h1 .grad{background:linear-gradient(120deg,#c4b5fd,#818cf8 40%,#60a5fa);-webkit-background-clip:text;background-clip:text}
+.core{background:radial-gradient(circle at 30% 25%,rgba(167,139,250,.28),rgba(4,6,15,.95) 70%);box-shadow:0 0 120px rgba(124,58,237,.35),inset 0 1px 0 rgba(255,255,255,.08)}
+.chip{background:rgba(10,14,28,.85);backdrop-filter:blur(8px);border-radius:999px;font-size:.92rem}
+
+/* Titres de section */
+.section{padding:120px 5%}
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:.8rem;letter-spacing:.22em;color:#a5b4fc}
+.eyebrow::after{content:'';width:60px;height:1px;background:linear-gradient(90deg,#a78bfa,transparent)}
+h2{background:linear-gradient(180deg,#fff 30%,#a5b4fc);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:56px}
+
+/* Cartes : verre sombre + contour dégradé */
+.card{border:1px solid transparent;border-radius:24px;background:var(--glass) padding-box,var(--edge) border-box;
+  box-shadow:0 30px 60px -35px rgba(79,70,229,.5),inset 0 1px 0 rgba(255,255,255,.04);transition:transform .35s,box-shadow .35s}
+.card:hover{transform:translateY(-6px);border-color:transparent;background:var(--glass) padding-box,var(--edge-hi) border-box;
+  box-shadow:0 40px 70px -30px rgba(124,58,237,.55),inset 0 1px 0 rgba(255,255,255,.06)}
+
+/* Plus de badges : technologies en texte épuré */
+.tags{gap:0;margin-top:18px;font-size:.88rem}
+.tags span,.k2 .tags span,.k3 .tags span,.k4 .tags span,.k5 .tags span,.interests .tags span{
+  padding:0;border:0;background:none;border-radius:0;color:#c7d2fe;font-weight:500}
+.tags{row-gap:4px}.tags span:not(:last-child)::after{content:'·';margin:0 9px;color:#7c3aed;font-weight:700}
+
+/* Compétences : liste élégante dans chaque carte */
+#skills .tags{display:grid;grid-template-columns:1fr 1fr;gap:2px 16px;margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+#skills .tags span{display:flex;align-items:center;gap:10px;padding:6px 0;color:#e2e8f0;font-size:.93rem}
+#skills .tags span:not(:last-child)::after{content:none}
+#skills .tags span::before{content:'';width:12px;height:2px;border-radius:2px;background:var(--grad);flex:none;margin:0}
+#skills .grid4{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+
+/* Étiquettes (Stage, Projet client…) : texte discret en capitales */
+.pill{padding:0;border:0;background:none;border-radius:0;color:#a5b4fc;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
+.pill.star{background:none;color:#fcd34d}
+
+/* Chiffres clés */
+.stats .card{padding:30px 16px}
+.stats strong{font-size:3rem;background:linear-gradient(180deg,#fff,#a5b4fc);-webkit-background-clip:text;background-clip:text}
+.stats span{font-size:.92rem}
+
+/* Expérience */
+.exp{padding:34px 36px;margin-bottom:22px}
+.exp h3{font-size:1.45rem}
+.exp .meta{color:#a5b4fc;margin-top:4px}
+.exp ul,.proj ul{list-style:none;margin-left:0}
+.exp li,.proj li{position:relative;padding-left:22px;margin-top:6px}
+.exp li::before,.proj li::before{content:'';position:absolute;left:0;top:.8em;width:10px;height:2px;border-radius:2px;background:var(--grad)}
+
+/* Projets */
+.filters{padding:6px;border-radius:999px;background:rgba(255,255,255,.03);border:1px solid var(--line);width:max-content;max-width:100%}
+.f{border:0;background:none;padding:9px 20px}
+.f.on,.f:hover{background:#fff;color:#0b1020}
+.proj{padding:30px}
+.proj.featured{background:var(--glass) padding-box,linear-gradient(135deg,rgba(252,211,77,.55),rgba(124,58,237,.25) 50%,rgba(255,255,255,.05)) border-box}
+.more{border-top-color:var(--line);color:#c4b5fd}
+
+/* Formation */
+.timeline{border-left:0;padding-left:40px;position:relative}
+.timeline::before{content:'';position:absolute;left:0;top:10px;bottom:10px;width:2px;background:linear-gradient(180deg,#7c3aed,rgba(59,130,246,.4),transparent)}
+.timeline li{border:1px solid transparent;border-radius:20px;background:var(--glass) padding-box,var(--edge) border-box}
+.timeline li::before{left:-49px;background:var(--bg);border-color:#a78bfa}
+.timeline li.now::before{background:var(--grad);border-color:transparent;box-shadow:0 0 18px rgba(124,58,237,.8)}
+
+/* Formulaire sombre */
+label{font-size:.76rem;letter-spacing:.14em;color:#a5b4fc}
+input,textarea{background:rgba(255,255,255,.03);color:var(--text);border:1px solid rgba(255,255,255,.1);border-radius:14px;transition:border-color .2s,box-shadow .2s}
+input:focus,textarea:focus{outline:0;border-color:rgba(167,139,250,.7);box-shadow:0 0 0 4px rgba(124,58,237,.18)}
+
+/* Pied de page */
+.footer{border-top:0;position:relative;justify-content:center}
+.footer::before{content:'';position:absolute;top:0;left:5%;right:5%;height:1px;background:linear-gradient(90deg,transparent,rgba(167,139,250,.5),transparent)}
+
+@media (max-width:900px){
+  .nav{inset:10px 50% auto auto}
+  .links{top:70px;border-radius:16px;left:3%;right:3%;border:1px solid var(--line)}
+  #skills .tags{grid-template-columns:1fr 1fr}
+}
