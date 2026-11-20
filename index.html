@@ -3,245 +3,488 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wissam Ait El Hadi | Développeuse Full-Stack</title>
-<meta name="description" content="Portfolio de Wissam Ait El Hadi, étudiante en Master 1 Développement à INGETIS Paris, en recherche de stage full-stack (4 à 6 mois) : React, TypeScript, Node.js, PHP, Java, SQL.">
-<meta property="og:title" content="Wissam Ait El Hadi | Développeuse Full-Stack">
-<meta property="og:description" content="Master 1 Développement à INGETIS Paris. Recherche de stage full-stack de 4 à 6 mois, disponible immédiatement.">
+<title>Wissam Ait El Hadi — Développeuse Full Stack</title>
+<meta name="description" content="Portfolio de Wissam Ait El Hadi, étudiante ingénieure en informatique (Master 1 Développement, INGETIS Paris) à la recherche d'un stage de 4 à 6 mois en développement full stack.">
+<meta property="og:title" content="Wissam Ait El Hadi — Développeuse Full Stack">
+<meta property="og:description" content="Étudiante ingénieure en informatique à Paris. Recherche un stage full stack de 4 à 6 mois, disponible immédiatement.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#030712">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%234f46e5'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'>W</text></svg>">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#f3efe6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151412" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/sections.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="module" src="js/main.js"></script>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
-  <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
-  <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
-  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></symbol>
-  <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
-  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
-  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
-  <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
-  <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></symbol>
-  <symbol id="i-server" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01"/><path d="M6 18h.01"/></symbol>
-  <symbol id="i-terminal" viewBox="0 0 24 24"><path d="m4 17 6-6-6-6"/><path d="M12 19h8"/></symbol>
-  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></symbol>
-  <symbol id="i-brief" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
-  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
-  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
-  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></symbol>
-  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
-  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/></symbol>
-  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 17v4"/><path d="M17 19h4"/></symbol>
-  <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></symbol>
-  <symbol id="i-user" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></symbol>
-  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
-</svg>
-<canvas id="stars" aria-hidden="true"></canvas>
-<div id="progress"></div>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 
-<header class="nav">
-  <a class="logo" href="#home">W.A<span>.</span></a>
-  <button class="burger" aria-label="Menu" aria-expanded="false"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg></button>
-  <nav class="links" aria-label="Navigation">
-    <a href="#home">Accueil</a><a href="#about">À propos</a><a href="#skills">Compétences</a>
-    <a href="#experience">Expérience</a><a href="#projects">Projets</a><a href="#education">Formation</a><a href="#contact">Contact</a>
-  </nav>
-  <a class="btn small" href="#contact">Me contacter</a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="wordmark" href="#haut" aria-label="Wissam Ait El Hadi, retour en haut">Wissam Ait El Hadi</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="menu-toggle__label">Menu</span>
+      <span class="menu-toggle__bars" aria-hidden="true"></span>
+    </button>
+    <nav id="menu" class="site-nav" aria-label="Navigation principale">
+      <ol>
+        <li><a href="#a-propos"><span class="num">01</span>À propos</a></li>
+        <li><a href="#competences"><span class="num">02</span>Compétences</a></li>
+        <li><a href="#projets"><span class="num">03</span>Projets</a></li>
+        <li><a href="#parcours"><span class="num">04</span>Parcours</a></li>
+        <li><a href="#stage"><span class="num">05</span>Stage</a></li>
+        <li><a href="#contact"><span class="num">06</span>Contact</a></li>
+      </ol>
+    </nav>
+  </div>
 </header>
 
-<main>
-<section class="hero" id="home">
-  <div>
-    <p class="badge"><i></i> Recherche de stage · disponible immédiatement</p>
-    <h1>Wissam <span class="grad">Ait El Hadi</span></h1>
-    <p class="typed"><span id="typed"></span><b>|</b></p>
-    <p class="lead">Étudiante en Master 1 Développement à INGETIS Paris, je recherche un <b>stage de 4 à 6 mois en développement full-stack</b>. Deux stages en entreprise et un <b>projet livré à un vrai client</b> m’ont appris à transformer un besoin métier en une application fiable, sécurisée et simple à utiliser.</p>
-    <p class="meta hero-meta">Rythme : 3 semaines en entreprise / 1 semaine à l’école · Paris, Île-de-France</p>
-    <div class="row">
-      <a class="btn" href="#contact"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg> Me contacter</a>
-      <a class="btn ghost" href="./cv.pdf" download><svg class="i" aria-hidden="true"><use href="#i-download"/></svg> Télécharger CV</a>
+<main id="contenu">
+
+  <!-- ===== Accueil ===== -->
+  <section class="hero" id="haut" aria-labelledby="hero-title">
+    <div class="hero__text">
+      <p class="hero__status"><span class="dot" aria-hidden="true"></span>Recherche de stage · disponible immédiatement</p>
+      <h1 id="hero-title" class="hero__name">Wissam<br>Ait El Hadi</h1>
+      <p class="hero__role">Développeuse Full Stack <span aria-hidden="true">|</span> Étudiante ingénieure en informatique</p>
+      <p class="hero__intro">
+        Je construis des applications web de bout en bout, de la base de données jusqu'à l'écran.
+        Mon dernier projet remplace le fichier Excel d'une
+        <mark class="hl">entreprise d'électricité</mark> : devis, factures et pointage, même sans connexion.
+        Je cherche maintenant une équipe où continuer à apprendre sur de vrais produits.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#projets">Découvrir mes projets <span class="btn__arrow" aria-hidden="true">↓</span></a>
+        <a class="btn btn--line" href="cv.pdf" download="CV_Wissam_Ait_El_Hadi.pdf">Télécharger mon CV <span class="btn__meta">PDF</span></a>
+      </div>
     </div>
-  </div>
-  <div class="orbit" aria-hidden="true">
-    <div class="core"><strong>W.A</strong><small>Full-Stack Dev</small></div>
-    <span class="chip c1">PHP</span><span class="chip c2">Java</span><span class="chip c3">SQL</span>
-    <span class="chip c4">React</span><span class="chip c5">TypeScript</span><span class="chip c6">Node.js</span>
-  </div>
-</section>
 
+    <figure class="stack" aria-labelledby="stack-caption">
+      <figcaption id="stack-caption" class="stack__caption">Ce que je construis, couche par couche</figcaption>
+      <ol class="stack__layers">
+        <li class="stack__layer" style="--i:0">
+          <span class="stack__label">Interface</span>
+          <span class="stack__tech">React · Angular · TypeScript</span>
+        </li>
+        <li class="stack__layer" style="--i:1">
+          <span class="stack__label">API &amp; logique métier</span>
+          <span class="stack__tech">Java / Spring Boot · PHP · Node.js</span>
+        </li>
+        <li class="stack__layer" style="--i:2">
+          <span class="stack__label">Données</span>
+          <span class="stack__tech">PostgreSQL · MySQL</span>
+        </li>
+      </ol>
+      <p class="stack__note">Basée à Paris · Master 1 à INGETIS</p>
+    </figure>
+  </section>
 
-<section class="section" id="about">
-  <p class="eyebrow">— À propos</p><h2>Qui suis-je ?</h2>
-  <div class="split">
-    <div class="text">
-      <p>Étudiante en <b>Master 1 Développement</b> à l'école INGETIS Paris et titulaire d'un <b>Bac+3 en Génie Logiciel</b>, je cherche un <em>stage</em> en développement web Full-Stack pour travailler sur des projets concrets.</p>
-      <p>Je développe avec <em class="v">React / TypeScript</em>, <em class="v">Node.js</em>, <em class="v">PHP/MySQL</em> et <em class="v">Java</em> : de l'analyse du besoin jusqu'à la mise en ligne. Mes stages chez Sonatrach et Candia, et une application livrée à une entreprise d'électricité, m'ont appris à travailler en conditions réelles, avec des utilisateurs non techniques.</p>
-      <p class="meta ico"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg> Paris, Île-de-France · Rythme 3 semaines entreprise / 1 semaine école</p>
+  <!-- ===== 01 À propos ===== -->
+  <section class="section" id="a-propos" aria-labelledby="t-apropos">
+    <header class="section__head">
+      <span class="section__num">01</span>
+      <h2 id="t-apropos" class="section__title">À propos</h2>
+    </header>
+    <div class="section__body about">
+      <div class="about__text prose">
+        <p class="lede">J'ai commencé par le génie logiciel à Béjaïa, en Algérie. Je poursuis aujourd'hui en Master 1 Développement à INGETIS, à Paris.</p>
+        <p>Pendant ma licence, deux stages m'ont montré l'autre côté du code : chez Candia, j'ai surtout écouté des utilisateurs non techniques et traduit leurs besoins en modèles UML ; chez Sonatrach, j'ai développé en équipe le back-end d'une application qui remplaçait un suivi Excel à la Direction Finance.</p>
+        <p>Ce qui me plaît dans le développement full stack, c'est de suivre une fonctionnalité en entier : la table en base, la règle métier dans l'API, puis l'écran que quelqu'un utilisera vraiment. J'accorde une attention particulière à la sécurité (droits d'accès, requêtes préparées, CSRF) et aux tests des parcours.</p>
+        <p>Mon objectif : devenir développeuse full stack, en commençant par un stage dans une équipe qui livre régulièrement et qui relit le code.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Formation</dt><dd>Master 1 Développement, INGETIS Paris</dd></div>
+        <div><dt>Diplôme</dt><dd>Licence Génie Logiciel, Université Abderrahmane Mira</dd></div>
+        <div><dt>Langues</dt><dd>Français C1 · Anglais B2</dd></div>
+        <div><dt>Atouts</dt><dd>Esprit analytique, rigueur sur les tests et la sécurité, communication avec des non-techniciens</dd></div>
+        <div><dt>En dehors</dt><dd>Voyages, lecture, cinéma, activités créatives</dd></div>
+      </dl>
     </div>
-    <div class="stats">
-      <div class="card"><strong data-n>6</strong><span>projets réalisés</span></div>
-      <div class="card"><strong data-n>2</strong><span>stages en entreprise</span></div>
-      <div class="card"><strong data-n>8</strong><span>langages maîtrisés</span></div>
-      <div class="card"><strong data-n>1</strong><span>application livrée à un client</span></div>
+  </section>
+
+  <!-- ===== 02 Compétences ===== -->
+  <section class="section" id="competences" aria-labelledby="t-comp">
+    <header class="section__head">
+      <span class="section__num">02</span>
+      <h2 id="t-comp" class="section__title">Compétences techniques</h2>
+    </header>
+    <div class="section__body">
+      <div class="skills">
+        <div class="skills__row">
+          <h3 class="skills__cat">Frontend</h3>
+          <ul class="inline-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>Angular</li><li>React</li></ul>
+        </div>
+        <div class="skills__row">
+          <h3 class="skills__cat">Backend</h3>
+          <ul class="inline-list"><li>Java</li><li>Spring Boot</li><li>PHP</li></ul>
+        </div>
+        <div class="skills__row">
+          <h3 class="skills__cat">Bases de données</h3>
+          <ul class="inline-list"><li>PostgreSQL</li><li>MySQL</li></ul>
+        </div>
+        <div class="skills__row">
+          <h3 class="skills__cat">Outils</h3>
+          <ul class="inline-list"><li>Git</li><li>GitHub</li><li>Docker</li><li>VS Code</li></ul>
+        </div>
+        <div class="skills__row">
+          <h3 class="skills__cat">Conception</h3>
+          <ul class="inline-list"><li>UML</li><li>POO</li><li>Modélisation de données</li><li>Patrons de conception</li><li>Analyse des besoins</li></ul>
+        </div>
+      </div>
+      <p class="skills__note">Aussi utilisés sur mes projets : Node.js, Tailwind CSS, Java Swing, Playwright, Vercel, Linux, Jira.</p>
     </div>
-  </div>
-  <div class="duo">
-    <div class="card lux">
-      <div class="lux-head"><svg class="i" aria-hidden="true"><use href="#i-heart"/></svg><div><h3>Centres d'intérêt</h3><p>Ce qui me passionne</p></div></div>
-      <ul class="lux-list"><li>Projets open source web et mobile</li><li>Intelligence artificielle</li><li>Développement web</li><li>Veille technologique</li><li>Innovation informatique</li></ul>
+  </section>
+
+  <!-- ===== 03 Projets ===== -->
+  <section class="section" id="projets" aria-labelledby="t-proj">
+    <header class="section__head">
+      <span class="section__num">03</span>
+      <h2 id="t-proj" class="section__title">Projets</h2>
+    </header>
+    <div class="section__body">
+      <p class="section__intro">Quatre projets détaillés, puis d'autres réalisations plus courtes. Pour chacun, j'indique le contexte et mon rôle exact quand le travail s'est fait en équipe.</p>
+
+      <!-- Sonaltech -->
+      <article class="case" id="projet-sonaltech" aria-labelledby="p-sonaltech">
+        <header class="case__head">
+          <p class="case__kicker"><span class="case__index">A</span> Projet client · en ligne · 2026</p>
+          <h3 id="p-sonaltech" class="case__title">Sonaltech Électrique</h3>
+          <p class="case__subtitle">Site vitrine et application de gestion pour une entreprise d'électricité</p>
+        </header>
+        <div class="case__media case__media--duo">
+          <figure>
+            <img src="assets/sonaltech-site.jpg" alt="Page d'accueil du site Sonaltech Électrique : titre, bouton de demande de devis et quatre arguments de l'entreprise." width="960" height="600" loading="lazy" decoding="async">
+            <figcaption>Le site public</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/sonaltech-admin.jpg" alt="Espace de gestion : liste des demandes de devis reçues depuis le site, avec le menu Devis, Factures, Chantiers et Pointage." width="960" height="600" loading="lazy" decoding="async">
+            <figcaption>L'espace de gestion : demandes reçues depuis le site</figcaption>
+          </figure>
+        </div>
+        <div class="case__body">
+          <div class="case__block">
+            <h4>Le problème</h4>
+            <p>L'entreprise gérait ses devis, ses factures et le pointage de ses employés dans un fichier Excel, souvent sur des chantiers sans connexion internet fiable.</p>
+          </div>
+          <div class="case__block">
+            <h4>Ce que j'ai livré</h4>
+            <ul class="ticks">
+              <li>Devis, factures, bons pour et attachements de chantier, avec des PDF au format habituel de l'entreprise</li>
+              <li>Pointage des employés, frais et suivi par chantier, avec export Excel</li>
+              <li>Fonctionnement hors ligne (PWA, IndexedDB) et synchronisation automatique avec le serveur au retour de la connexion</li>
+              <li>Demandes de devis du site public reçues directement dans l'espace de gestion</li>
+              <li>API serverless, base PostgreSQL, déploiement continu GitHub → Vercel, tests Playwright</li>
+            </ul>
+          </div>
+        </div>
+        <footer class="case__foot">
+          <ul class="tags" aria-label="Technologies"><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Node.js</li><li>PostgreSQL</li><li>PWA</li><li>Vercel</li></ul>
+          <p class="case__links"><a class="link-arrow" href="https://sonaltech.vercel.app" target="_blank" rel="noopener">Voir le site en ligne<span class="sr-only"> (nouvel onglet)</span></a></p>
+        </footer>
+      </article>
+
+      <!-- QueenBee -->
+      <article class="case" id="projet-queenbee" aria-labelledby="p-queenbee">
+        <header class="case__head">
+          <p class="case__kicker"><span class="case__index">B</span> Projet fil rouge du Master · équipe de 3 · en cours</p>
+          <h3 id="p-queenbee" class="case__title">QueenBee</h3>
+          <p class="case__subtitle">Plateforme de gestion apicole pour des ruches connectées</p>
+        </header>
+        <div class="case__media">
+          <figure class="diagram" aria-labelledby="qb-cap">
+            <svg viewBox="0 0 640 300" role="img" aria-labelledby="qb-title qb-desc">
+              <title id="qb-title">Architecture visée de QueenBee</title>
+              <desc id="qb-desc">Les capteurs des ruches envoient leurs mesures par MQTT vers un service d'ingestion, qui les enregistre dans PostgreSQL. Une API FastAPI sert ensuite une application de terrain Flutter utilisable hors ligne et un tableau de bord web Next.js.</desc>
+              <g class="d-box"><rect x="16" y="40" width="132" height="60"/><text x="82" y="66">Ruches</text><text class="d-sub" x="82" y="86">capteurs</text></g>
+              <g class="d-box"><rect x="16" y="200" width="132" height="60"/><text x="82" y="226">Simulateur</text><text class="d-sub" x="82" y="246">scénarios</text></g>
+              <g class="d-box"><rect x="196" y="120" width="132" height="60"/><text x="262" y="146">Ingestion</text><text class="d-sub" x="262" y="166">MQTT</text></g>
+              <g class="d-box d-box--accent"><rect x="376" y="120" width="112" height="60"/><text x="432" y="146">API</text><text class="d-sub" x="432" y="166">FastAPI</text></g>
+              <g class="d-box"><rect x="376" y="226" width="112" height="60"/><text x="432" y="252">PostgreSQL</text><text class="d-sub" x="432" y="272">PostGIS</text></g>
+              <g class="d-box"><rect x="520" y="40" width="108" height="60"/><text x="574" y="66">App terrain</text><text class="d-sub" x="574" y="86">Flutter</text></g>
+              <g class="d-box"><rect x="520" y="200" width="108" height="60"/><text x="574" y="226">Web</text><text class="d-sub" x="574" y="246">Next.js</text></g>
+              <g class="d-line">
+                <path d="M148 70 C175 70 170 150 196 150"/>
+                <path d="M148 230 C175 230 170 150 196 150"/>
+                <path d="M328 150 H376"/>
+                <path d="M432 180 V226"/>
+                <path d="M488 140 C505 140 500 70 520 70"/>
+                <path d="M488 160 C505 160 500 230 520 230"/>
+              </g>
+            </svg>
+            <figcaption id="qb-cap">Architecture visée, d'après le cahier des charges. Le projet est en cours de construction.</figcaption>
+          </figure>
+        </div>
+        <div class="case__body">
+          <div class="case__block">
+            <h4>Le problème</h4>
+            <p>L'association BeeAfrica suit environ 400 ruches réparties sur 8 sites dans 3 pays, avec une connexion internet intermittente. Les apiculteurs ont besoin de saisir leurs inspections et récoltes sur le terrain, et les coordinateurs d'une vue d'ensemble.</p>
+          </div>
+          <div class="case__block">
+            <h4>Où en est le projet</h4>
+            <ul class="ticks">
+              <li>Projet de l'année de Master 1 (octobre 2026 – juin 2027), mené à trois ; les tickets tournent entre nous par domaine : API, web, mobile, infrastructure</li>
+              <li>Premières briques posées dans le dépôt : API, tableau de bord web, application mobile, ingestion des mesures et simulateur de capteurs</li>
+              <li>Organisation en sprints de deux semaines, une branche et une revue de code par ticket</li>
+            </ul>
+            <p class="case__note">Rien n'est encore en production : je mettrai cette fiche à jour au fil des livraisons.</p>
+          </div>
+        </div>
+        <footer class="case__foot">
+          <ul class="tags" aria-label="Technologies"><li>Next.js</li><li>TypeScript</li><li>FastAPI</li><li>Flutter</li><li>PostgreSQL</li><li>MQTT</li><li>Docker</li><li>GitHub Actions</li></ul>
+          <p class="case__links"><a class="link-arrow" href="https://github.com/nagoloumdaniel/QueenBee" target="_blank" rel="noopener">Dépôt GitHub de l'équipe<span class="sr-only"> (nouvel onglet)</span></a></p>
+        </footer>
+      </article>
+
+      <!-- Hôtel Étoile -->
+      <article class="case" id="projet-hotel" aria-labelledby="p-hotel">
+        <header class="case__head">
+          <p class="case__kicker"><span class="case__index">C</span> Projet universitaire · démo en ligne</p>
+          <h3 id="p-hotel" class="case__title">Hôtel Étoile</h3>
+          <p class="case__subtitle">Application de réservation hôtelière</p>
+        </header>
+        <div class="case__media case__media--duo">
+          <figure>
+            <img src="assets/hotel-accueil.jpg" alt="Page d'accueil de l'Hôtel Étoile : photo de la piscine, titre « L'excellence hôtelière » et boutons de réservation." width="1200" height="538" loading="lazy" decoding="async">
+            <figcaption>Accueil</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/hotel-chambres.jpg" alt="Liste des chambres avec photo, équipements, prix par nuit et bouton Réserver." width="1200" height="538" loading="lazy" decoding="async">
+            <figcaption>Liste des chambres</figcaption>
+          </figure>
+        </div>
+        <div class="case__body">
+          <div class="case__block">
+            <h4>Le problème</h4>
+            <p>Permettre à un client de trouver une chambre libre et de la réserver en ligne, et à l'hôtel de valider ces réservations depuis un seul endroit.</p>
+          </div>
+          <div class="case__block">
+            <h4>Fonctionnalités</h4>
+            <ul class="ticks">
+              <li>Recherche de chambres et gestion des disponibilités</li>
+              <li>Espace client : réservations, notifications, profil</li>
+              <li>Espace administrateur : tableau de bord, chambres, clients, réservations à confirmer ou annuler</li>
+              <li>Déployable sur hébergement mutualisé, Docker ou Vercel (couche de compatibilité MySQL → PostgreSQL)</li>
+            </ul>
+            <p class="case__note">La démo affiche des comptes de test sur la page de connexion.</p>
+          </div>
+        </div>
+        <footer class="case__foot">
+          <ul class="tags" aria-label="Technologies"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Docker</li></ul>
+          <p class="case__links">
+            <a class="link-arrow" href="https://hotel-etoile.vercel.app" target="_blank" rel="noopener">Voir la démo<span class="sr-only"> (nouvel onglet)</span></a>
+            <a class="link-arrow" href="https://github.com/wissam2005-ait/hotel_etoile" target="_blank" rel="noopener">Code sur GitHub<span class="sr-only"> (nouvel onglet)</span></a>
+          </p>
+        </footer>
+      </article>
+
+      <!-- Sonatrach -->
+      <article class="case" id="projet-sonatrach" aria-labelledby="p-sonatrach">
+        <header class="case__head">
+          <p class="case__kicker"><span class="case__index">D</span> Stage · Sonatrach RTC · projet en équipe</p>
+          <h3 id="p-sonatrach" class="case__title">Gestion des règlements bancaires</h3>
+          <p class="case__subtitle">Application interne pour la Direction Finance</p>
+        </header>
+        <div class="case__media">
+          <figure>
+            <img src="assets/sonatrach-saisie.jpg" alt="Écran de l'agent financier : formulaire de saisie d'opération (date, nature, référence, recette ou dépense, montant) et filtre des mouvements par mois." width="1200" height="562" loading="lazy" decoding="async">
+            <figcaption>Saisie des opérations par l'agent financier</figcaption>
+          </figure>
+        </div>
+        <div class="case__body">
+          <div class="case__block">
+            <h4>Le problème</h4>
+            <p>Les recettes et dépenses de la Direction Finance étaient suivies dans Excel, sans circuit de validation. Mon rôle dans l'équipe : le back-end.</p>
+          </div>
+          <div class="case__block">
+            <h4>Fonctionnalités</h4>
+            <ol class="flow" aria-label="Circuit de validation">
+              <li><strong>Agent</strong> saisit les mouvements, les bénéficiaires et les commissions</li>
+              <li><strong>Responsable</strong> génère le brouillard de banque d'une période, puis l'approuve ou le rejette</li>
+              <li><strong>Validé</strong> : les mouvements de la période ne peuvent plus être supprimés</li>
+            </ol>
+            <ul class="ticks">
+              <li>Contrôle d'accès par rôles : agent, responsable, administrateur</li>
+              <li>Mots de passe hachés, requêtes préparées, protection CSRF, échappement des sorties</li>
+              <li>Tests fonctionnels des parcours, des droits d'accès et du circuit de validation</li>
+            </ul>
+          </div>
+        </div>
+        <footer class="case__foot">
+          <ul class="tags" aria-label="Technologies"><li>PHP</li><li>PDO</li><li>MySQL</li><li>HTML</li><li>CSS</li></ul>
+          <p class="case__links"><a class="link-arrow" href="https://github.com/wissam2005-ait/sonatrach-banque" target="_blank" rel="noopener">Code sur GitHub<span class="sr-only"> (nouvel onglet)</span></a></p>
+        </footer>
+      </article>
+
+      <!-- Autres projets -->
+      <h3 class="others__title">Autres projets</h3>
+      <ul class="others">
+        <li class="other">
+          <div class="other__main">
+            <h4 class="other__name">Gestion et planification ferroviaire</h4>
+            <p class="other__ctx">Application desktop · Java Swing, MySQL</p>
+            <p>Horaires et disponibilités par date, trajets directs ou avec correspondance, réservation et billet imprimable. Côté administrateur : trains, utilisateurs, tableau de bord et journal d'audit. Mots de passe hachés en PBKDF2, et une transaction <code>SELECT … FOR UPDATE</code> qui empêche la surréservation.</p>
+          </div>
+          <a class="link-arrow" href="https://github.com/wissam2005-ait/GestionFerroviaire" target="_blank" rel="noopener">Code<span class="sr-only"> du projet ferroviaire sur GitHub (nouvel onglet)</span></a>
+        </li>
+        <li class="other other--media">
+          <div class="other__main">
+            <h4 class="other__name">Mini-compilateur JavaScript</h4>
+            <p class="other__ctx">Projet universitaire en équipe · Java Swing · ma partie : l'analyse syntaxique</p>
+            <p>Analyse un sous-ensemble de JavaScript : liste des tokens, arbre syntaxique construit par descente récursive, et panneau des erreurs avec leur ligne.</p>
+          </div>
+          <figure class="other__thumb">
+            <img src="assets/compilateur.jpg" alt="Le mini-compilateur après analyse d'un exemple : code source, 192 tokens, arbre syntaxique et aucune erreur." width="1200" height="738" loading="lazy" decoding="async">
+          </figure>
+          <a class="link-arrow" href="https://github.com/wissam2005-ait/mini_compilateur_java_script" target="_blank" rel="noopener">Code<span class="sr-only"> du mini-compilateur sur GitHub (nouvel onglet)</span></a>
+        </li>
+        <li class="other">
+          <div class="other__main">
+            <h4 class="other__name">DiabLife</h4>
+            <p class="other__ctx">Projet universitaire · PHP, MySQL</p>
+            <p>Suivi de patients diabétiques : relevés de glycémie avec graphique et seuils d'alerte, prise de rendez-vous, espaces médecin et patient.</p>
+          </div>
+          <a class="link-arrow" href="https://github.com/wissam2005-ait/diablife" target="_blank" rel="noopener">Code<span class="sr-only"> de DiabLife sur GitHub (nouvel onglet)</span></a>
+        </li>
+      </ul>
     </div>
-    <div class="card lux">
-      <div class="lux-head"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg><div><h3>Savoir-être</h3><p>Ma façon de travailler</p></div></div>
-      <ul class="lux-list"><li>Rigueur</li><li>Autonomie</li><li>Travail d'équipe</li><li>Gestion efficace du temps</li></ul>
+  </section>
+
+  <!-- ===== 04 Parcours ===== -->
+  <section class="section" id="parcours" aria-labelledby="t-parcours">
+    <header class="section__head">
+      <span class="section__num">04</span>
+      <h2 id="t-parcours" class="section__title">Expériences et formation</h2>
+    </header>
+    <div class="section__body timeline-cols">
+      <div>
+        <h3 class="col-title">Expériences</h3>
+        <ol class="timeline">
+          <li class="entry">
+            <p class="entry__date"><time datetime="2025-12">déc. 2025</time> – <time datetime="2026-05">mai 2026</time></p>
+            <h4 class="entry__title">Stagiaire développeuse web back-end</h4>
+            <p class="entry__org">Sonatrach RTC · Béjaïa, Algérie</p>
+            <ul class="entry__list">
+              <li>Back-end, en équipe, d'une application interne remplaçant le suivi Excel de la Direction Finance (6 utilisateurs)</li>
+              <li>Contrôle d'accès par rôles à trois profils et workflow de validation des brouillards de banque</li>
+              <li>Sécurisation (hachage, requêtes préparées, CSRF) et tests fonctionnels</li>
+            </ul>
+          </li>
+          <li class="entry">
+            <p class="entry__date"><time datetime="2025-01">janv. 2025</time> – <time datetime="2025-05">mai 2025</time></p>
+            <h4 class="entry__title">Stagiaire en conception logicielle</h4>
+            <p class="entry__org">Candia · Algérie</p>
+            <ul class="entry__list">
+              <li>Recueil et analyse de cinq besoins auprès d'interlocuteurs non techniques</li>
+              <li>Rédaction des spécifications en équipe et modélisation UML : fonctionnalités, données, parcours utilisateurs</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div>
+        <h3 class="col-title">Formation</h3>
+        <ol class="timeline">
+          <li class="entry entry--now">
+            <p class="entry__date"><time datetime="2026-09">2026</time> – <time datetime="2027-06">2027</time> · en cours</p>
+            <h4 class="entry__title">Master 1 Développement, spécialisation web et full stack</h4>
+            <p class="entry__org">INGETIS Paris · diplôme de Master visé en 2028</p>
+          </li>
+          <li class="entry">
+            <p class="entry__date"><time datetime="2023-09">2023</time> – <time datetime="2026-06">2026</time></p>
+            <h4 class="entry__title">Licence Génie Logiciel</h4>
+            <p class="entry__org">Université Abderrahmane Mira, Béjaïa · diplômée</p>
+          </li>
+          <li class="entry">
+            <p class="entry__date"><time datetime="2024">2024</time></p>
+            <h4 class="entry__title">Formation Java Développeur</h4>
+            <p class="entry__org">Jura School, Béjaïa</p>
+          </li>
+          <li class="entry">
+            <p class="entry__date"><time datetime="2023">2023</time></p>
+            <h4 class="entry__title">Baccalauréat Technique Mathématique, mention Très Bien</h4>
+            <p class="entry__org">Lycée Arzki Laurani, Béjaïa</p>
+          </li>
+        </ol>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section" id="strengths">
-  <p class="eyebrow">— Points forts</p><h2>Ce que j'apporte</h2>
-  <div class="grid4 why">
-    <div class="card"><span class="ic t1"><svg class="i" aria-hidden="true"><use href="#i-globe"/></svg></span><h3>Full-Stack Web</h3><p>Du front-end au back-end : interfaces en React et TypeScript, API en Node.js ou PHP, données en SQL.</p></div>
-    <div class="card"><span class="ic t2"><svg class="i" aria-hidden="true"><use href="#i-rocket"/></svg></span><h3>Du besoin à la mise en ligne</h3><p>Recueil du besoin, conception, développement, tests et déploiement continu (GitHub, Vercel).</p></div>
-    <div class="card"><span class="ic t3"><svg class="i" aria-hidden="true"><use href="#i-db"/></svg></span><h3>Bases de données</h3><p>Modélisation relationnelle et requêtes SQL sur MySQL, PostgreSQL et Oracle.</p></div>
-    <div class="card"><span class="ic t4"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg></span><h3>Rigueur &amp; sécurité</h3><p>Mots de passe hachés, requêtes préparées, protection CSRF : la sécurité dès la conception.</p></div>
-  </div>
-</section>
+  <!-- ===== 05 Stage ===== -->
+  <section class="section" id="stage" aria-labelledby="t-stage">
+    <header class="section__head">
+      <span class="section__num">05</span>
+      <h2 id="t-stage" class="section__title">Recherche de stage</h2>
+    </header>
+    <div class="section__body search">
+      <dl class="ticket">
+        <div><dt>Poste</dt><dd>Stage en développement full stack</dd></div>
+        <div><dt>Durée</dt><dd>4 à 6 mois</dd></div>
+        <div><dt>Rythme</dt><dd>3 semaines en entreprise, 1 semaine à l'école</dd></div>
+        <div><dt>Lieu</dt><dd>Paris et Île-de-France</dd></div>
+        <div><dt>Début</dt><dd>Disponible immédiatement</dd></div>
+      </dl>
+      <div class="prose">
+        <p class="lede">Je cherche une équipe où je pourrai travailler sur un produit réel, du ticket jusqu'à la mise en production.</p>
+        <p>J'arrive avec une expérience concrète : une application livrée et utilisée par un client, un back-end développé en équipe en entreprise, et l'habitude de discuter avec des utilisateurs qui ne sont pas développeurs.</p>
+        <p>J'aimerais progresser sur l'architecture d'une application qui vit dans la durée, la revue de code et les tests automatisés, sur une stack Java / Spring Boot ou JavaScript / TypeScript.</p>
+        <p><a class="btn btn--solid" href="#contact">Me proposer un stage</a></p>
+      </div>
+    </div>
+  </section>
 
-<section class="section" id="skills">
-  <p class="eyebrow">— Compétences</p><h2>Stack technique</h2>
-  <div class="grid4">
-    <div class="card k1"><h3 class="hi"><svg class="i" aria-hidden="true"><use href="#i-layout"/></svg> Front-end</h3><p class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Tailwind CSS</span></p></div>
-    <div class="card k2"><h3 class="hi"><svg class="i" aria-hidden="true"><use href="#i-server"/></svg> Back-end</h3><p class="tags"><span>Node.js</span><span>PHP</span><span>Java</span><span>Spring Boot</span><span>API REST</span><span>GraphQL</span><span>Python</span><span>C</span></p></div>
-    <div class="card k3"><h3 class="hi"><svg class="i" aria-hidden="true"><use href="#i-db"/></svg> Bases de données</h3><p class="tags"><span>MySQL</span><span>PostgreSQL</span><span>Oracle SQL</span><span>IndexedDB</span><span>Modélisation relationnelle</span></p></div>
-    <div class="card k5"><h3 class="hi"><svg class="i" aria-hidden="true"><use href="#i-terminal"/></svg> DevOps &amp; outils</h3><p class="tags"><span>Git / GitHub</span><span>Docker</span><span>CI/CD</span><span>Vercel</span><span>Playwright</span><span>Linux</span><span>Jira</span><span>VS Code</span><span>IntelliJ</span></p></div>
-    <div class="card k4"><h3 class="hi"><svg class="i" aria-hidden="true"><use href="#i-layers"/></svg> Conception</h3><p class="tags"><span>UML</span><span>POO</span><span>Patrons de conception</span><span>Architecture logicielle</span><span>Analyse des besoins</span></p></div>
-  </div>
-</section>
-
-<section class="section" id="experience">
-  <p class="eyebrow">— Expérience</p><h2>Parcours professionnel</h2>
-  <article class="card exp">
-    <span class="pill"><svg class="i" aria-hidden="true"><use href="#i-brief"/></svg> Stage</span>
-    <h3>Stagiaire Développeuse Web back-end</h3>
-    <p class="meta">Sonatrach RTC · Béjaïa, Algérie · Décembre 2025 – Mai 2026</p>
-    <p>Conception et développement d'une application web de gestion bancaire interne : automatisation des mouvements, génération de brouillards de banque et validation par un responsable.</p>
-    <ul><li>Interfaces utilisateurs dynamiques avec trois rôles (agent, responsable, administrateur)</li><li>Sécurisation des flux de données (mots de passe hachés, requêtes préparées, protection CSRF)</li></ul>
-    <p class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Git</span></p>
-  </article>
-  <article class="card exp">
-    <span class="pill"><svg class="i" aria-hidden="true"><use href="#i-brief"/></svg> Stage</span>
-    <h3>Stagiaire en conception logicielle</h3>
-    <p class="meta">Candia · Algérie · Janvier 2025 – Mai 2025</p>
-    <p>Stage consacré à la phase de conception d'une solution logicielle au sein d'une entreprise industrielle de référence : de l'expression du besoin jusqu'à la définition de la solution.</p>
-    <ul><li>Analyse des besoins des utilisateurs et rédaction des spécifications</li><li>Modélisation de la solution : fonctionnalités, structure des données, parcours utilisateur</li><li>Travail en équipe et échanges avec des interlocuteurs non techniques</li></ul>
-    <p class="tags"><span>Analyse des besoins</span><span>Conception</span><span>Modélisation</span></p>
-  </article>
-</section>
-
-<section class="section" id="projects">
-  <p class="eyebrow">— Projets</p><h2>Réalisations</h2>
-  <div class="filters" role="group" aria-label="Filtrer les projets"><button class="f on" data-f="all">Tous</button><button class="f" data-f="web">Web</button><button class="f" data-f="desktop">Desktop</button><button class="f" data-f="stage">Stage</button><button class="f" data-f="client">Client</button></div>
-  <div class="grid3">
-    <article class="card proj featured" data-cat="web client">
-      <div class="feat-text">
-        <span class="pill star"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg> Projet client · en ligne</span>
-        <h3>Sonaltech Électrique — plateforme web et gestion hors ligne</h3>
-        <p>Une entreprise d’électricité faisait tous ses devis et factures sur Excel. J’ai conçu et livré une plateforme complète : un site vitrine pour trouver des clients et une application de gestion qui remplace Excel.</p>
-        <ul>
-          <li>Devis, factures, bons pour, attachements de chantier, pointage et frais, avec PDF au format de l’entreprise</li>
-          <li>Fonctionne <b>sans internet</b> (PWA, IndexedDB) et se synchronise automatiquement avec le serveur</li>
-          <li>Demandes de devis du site reçues dans l’espace de gestion ; photos de chantiers publiées sur le site</li>
-          <li>API serverless, base PostgreSQL, déploiement continu GitHub → Vercel, tests Playwright</li>
+  <!-- ===== 06 Contact ===== -->
+  <section class="section section--contact" id="contact" aria-labelledby="t-contact">
+    <header class="section__head">
+      <span class="section__num">06</span>
+      <h2 id="t-contact" class="section__title">Contact</h2>
+    </header>
+    <div class="section__body contact">
+      <div class="contact__direct">
+        <p class="lede">Une offre de stage, une question sur un projet : écrivez-moi, je réponds rapidement.</p>
+        <ul class="contact__list">
+          <li><span class="contact__label">Email</span><a href="mailto:wissam.aitelhadii@gmail.com">wissam.aitelhadii@gmail.com</a></li>
+          <li><span class="contact__label">Téléphone</span><a href="tel:+33746399300">+33 7 46 39 93 00</a></li>
+          <li><span class="contact__label">LinkedIn</span><a href="https://www.linkedin.com/in/wissam-ait-el-hadi" target="_blank" rel="noopener">wissam-ait-el-hadi<span class="sr-only"> (nouvel onglet)</span></a></li>
+          <li><span class="contact__label">GitHub</span><a href="https://github.com/wissam2005-ait" target="_blank" rel="noopener">wissam2005-ait<span class="sr-only"> (nouvel onglet)</span></a></li>
+          <li><span class="contact__label">CV</span><a href="cv.pdf" download="CV_Wissam_Ait_El_Hadi.pdf">Télécharger (PDF)</a></li>
         </ul>
-        <p class="tags"><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Node.js</span><span>PostgreSQL</span><span>PWA</span><span>Vercel</span></p>
-        <a class="more" href="https://sonaltech.vercel.app" target="_blank" rel="noopener">Voir le site en ligne <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a>
       </div>
-      <div class="shots">
-        <img src="assets/sonaltech-site.jpg" alt="Page d’accueil du site Sonaltech Électrique" loading="lazy" width="960" height="600">
-        <img src="assets/sonaltech-admin.jpg" alt="Espace de gestion : demandes de devis reçues" loading="lazy" width="960" height="600">
-      </div>
-    </article>
-    <article class="card proj" data-cat="web stage">
-      <span class="pill star"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg> Stage Sonatrach</span>
-      <h3>Gestion des mouvements bancaires</h3>
-      <p>Application web interne qui automatise le suivi des recettes et dépenses de la Direction Finance.</p>
-      <ul><li>Trois rôles : agent, responsable, administrateur</li><li>Génération de brouillards de banque, approuvés ou rejetés par le responsable</li><li>Sécurité : mots de passe hachés, requêtes préparées, protection CSRF</li></ul>
-      <p class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></p>
-      <a class="more" href="https://github.com/wissam2005-ait/sonatrach-banque" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-code"/></svg> Voir le code</a>
-    </article>
-    <article class="card proj" data-cat="web">
-      <span class="pill">Projet universitaire · Web</span>
-      <h3>Suivi médical en ligne</h3>
-      <p>Plateforme qui centralise la gestion d'un cabinet médical.</p>
-      <ul><li>Prise de rendez-vous en ligne</li><li>Dossiers patients</li><li>Suivi des soins</li></ul>
-      <p class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span></p>
-      <a class="more" href="https://github.com/wissam2005-ait/diablife" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-code"/></svg> Voir le code</a>
-    </article>
-    <article class="card proj" data-cat="web">
-      <span class="pill">Projet universitaire · Web · en ligne</span>
-      <h3>Réservation d'hôtel</h3>
-      <p>Application de réservation de chambres, de la recherche à la confirmation.</p>
-      <ul><li>Recherche multi-critères de chambres</li><li>Gestion des disponibilités</li><li>Espace client et espace administrateur (confirmation des réservations)</li><li>Démo en ligne : comptes de test sur la page de connexion</li></ul>
-      <p class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span></p>
-      <p class="more links2"><a href="https://hotel-etoile.vercel.app" target="_blank" rel="noopener">Voir le site en ligne <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a><a href="https://github.com/wissam2005-ait/hotel_etoile" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-code"/></svg> Voir le code</a></p>
-    </article>
-    <article class="card proj" data-cat="desktop">
-      <span class="pill">Projet universitaire · Desktop</span>
-      <h3>Gestion et planification des trains</h3>
-      <p>Application desktop pour organiser un réseau ferroviaire.</p>
-      <ul><li>Planification des horaires et des trajets</li><li>Réservation de billets</li><li>Interface graphique Java Swing</li></ul>
-      <p class="tags"><span>Java</span><span>Java Swing</span></p>
-      <a class="more" href="https://github.com/wissam2005-ait/GestionFerroviaire" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-code"/></svg> Voir le code</a>
-    </article>
-    <article class="card proj" data-cat="desktop">
-      <span class="pill">Projet universitaire · Desktop</span>
-      <h3>Mini compilateur JavaScript</h3>
-      <p>Compilateur d'un sous-ensemble de JavaScript, écrit en Java.</p>
-      <ul><li>Analyse lexicale et syntaxique</li><li>Interprétation du code</li><li>Affichage des erreurs dans une interface Swing</li></ul>
-      <p class="tags"><span>Java</span><span>Java Swing</span></p>
-      <a class="more" href="https://github.com/wissam2005-ait/mini_compilateur_java_script" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-code"/></svg> Voir le code</a>
-    </article>
-  </div>
-</section>
 
-<section class="section" id="education">
-  <p class="eyebrow">— Formation</p><h2>Parcours académique</h2>
-  <ol class="timeline">
-    <li class="now"><span class="pill"><svg class="i" aria-hidden="true"><use href="#i-cap"/></svg> En cours</span><h3>Master 1 Développement</h3><p class="meta">École INGETIS Paris · 2026 – en cours</p></li>
-    <li><h3>Bac+3 Génie Logiciel</h3><p class="meta">Université Abderrahmane Mira, Béjaïa · 2023 – 2026</p></li>
-    <li><h3>Formation Java Développeur</h3><p class="meta">Jura School, Béjaïa · 2024</p></li>
-    <li><h3>Baccalauréat Technique Mathématique, mention Très Bien</h3><p class="meta">Lycée Arzki Laurani, Béjaïa · 2023</p></li>
-  </ol>
- 
-</section>
-
-<section class="section" id="contact">
-  <p class="eyebrow">— Contact</p><h2>Travaillons ensemble</h2>
-  <div class="split">
-    <div class="text">
-      <p>Je recherche un stage de 4 à 6 mois en développement full-stack, disponible immédiatement. Écrivez-moi : je réponds rapidement.</p>
-      <p class="meta ico"><svg class="i dot" aria-hidden="true"><use href="#i-mail"/></svg> <a class="lnk" href="mailto:wissam.aitelhadii@gmail.com">wissam.aitelhadii@gmail.com</a></p>
-      <p class="meta ico"><svg class="i dot" aria-hidden="true"><use href="#i-phone"/></svg> <a class="lnk" href="tel:+33746399300">+33 7 46 39 93 00</a></p>
-      <p class="meta ico"><svg class="i dot" aria-hidden="true"><use href="#i-pin"/></svg> Paris, Île-de-France</p>
-      <p class="row"><a class="btn ghost" href="https://www.linkedin.com/in/wissam-ait-el-hadi" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-user"/></svg> LinkedIn</a><a class="btn ghost" href="https://github.com/wissam2005-ait" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-code"/></svg> GitHub</a><a class="btn ghost" href="./cv.pdf" download><svg class="i" aria-hidden="true"><use href="#i-file"/></svg> CV (PDF)</a></p>
+      <form class="form" id="contact-form" action="https://formsubmit.co/wissam.aitelhadii@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Message depuis le portfolio">
+        <input type="hidden" name="_template" value="table">
+        <p class="form__trap" aria-hidden="true"><label>Ne pas remplir <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
+        <div class="field">
+          <label for="f-name">Nom</label>
+          <input id="f-name" name="nom" type="text" autocomplete="name" required maxlength="100">
+          <p class="field__error" id="f-name-err" hidden></p>
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required maxlength="150">
+          <p class="field__error" id="f-email-err" hidden></p>
+        </div>
+        <div class="field">
+          <label for="f-msg">Message</label>
+          <textarea id="f-msg" name="message" rows="6" required maxlength="3000"></textarea>
+          <p class="field__error" id="f-msg-err" hidden></p>
+        </div>
+        <div class="form__foot">
+          <button class="btn btn--solid" type="submit">Envoyer le message</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
     </div>
-    <form class="card" id="form">
-      <div class="two"><label>Nom<input name="nom" required></label><label>Email<input type="email" name="email" required></label></div>
-      <label>Message<textarea name="message" rows="5" required></textarea></label>
-      <button class="btn" type="submit"><svg class="i" aria-hidden="true"><use href="#i-send"/></svg> Envoyer le message</button>
-    </form>
-  </div>
-</section>
+  </section>
 </main>
 
-<footer class="footer"><span>© 2026 Wissam Ait El Hadi</span></footer>
-
-<button id="top" aria-label="Retour en haut" hidden><svg class="i" aria-hidden="true"><use href="#i-up"/></svg></button>
-<script src="script.js"></script>
+<footer class="site-footer">
+  <p>© 2026 Wissam Ait El Hadi</p>
+  <p>Site statique en HTML, CSS et JavaScript, hébergé sur GitHub Pages · <a href="https://github.com/wissam2005-ait/portefeuille" target="_blank" rel="noopener">code source<span class="sr-only"> (nouvel onglet)</span></a></p>
+</footer>
 </body>
 </html>
